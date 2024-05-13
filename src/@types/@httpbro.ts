@@ -1,17 +1,19 @@
 export type HttpBroConstruct = {
-    baseURL?: HttpUrl;
-    baseAuth?: HttpAuth;
-    baseHeaders?: HttpHeader[];
+    baseURL?: HttpBroUrl;
+    baseAuth?: HttpBroAuth;
+    baseHeaders?: HttpBroHeader[];
 }
 
-export type HttpUrl = string;
+export type HttpBroUrl = string;
 
-export type HttpAuth = string;
+export type HttpBroAuth = string;
 
-export type HttpHeader = {
+export type HttpBroHeader = {
     name: string;
     value: string;
 }
+
+export type HttpBroError = Error;
 
 export type HttpBroResponse = Response;
 
